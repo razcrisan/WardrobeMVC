@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color:lightcyan;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,63 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.thumbpic1 {
+    background-image: url('Photos/Shirt.jpg');
+    height:170px;
+    padding-top:65px;
+    padding-left:100px;
+
+}
+.thumbpic1 a btn.btn-default{
+    padding-top:60px;
+    padding-left:100px;
+}
+
+.jumbotronpicture {
+    background-image: url('Photos/background1.jpg');
+    height:250px;
+    font-family: 'Rozha One', serif;
+    font-size:30ps;
+   padding-top:60px;
+    padding-left:100px;
+    color:white;
+
+}
+
+h1{
+    font-family: 'Rozha One', serif;
+}
+
+.thumbpic2 {
+    background-image: url('Photos/images (2).jpg');
+    height: 170px;
+    padding-top: 65px;
+    padding-left: 100px;
+    width: 262.5px;
+}
+.div.container.body-content .div.row .div.col-md-3{
+    padding-left:0px;
+}
+
+div.container.body-content div.row div.thumbpic3 {
+    background-image: url('Photos/images (3).jpg');
+    height:170px;
+    padding-top:65px;
+    padding-left:80px;
+    width:262.5px;
+}
+
+div.container.body-content div.row div.thumbpic4 {
+      background-image: url('Photos/images (1).jpg');
+    height:170px;
+    padding-top:65px;
+    padding-left:100px;
+    width:262.5px;
+}
+
+a.btn.btn-default{
+    font-family: 'Rozha One', serif;
+    background-color:lightcyan;
 }
