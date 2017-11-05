@@ -2,6 +2,8 @@
     padding-top: 50px;
     padding-bottom: 20px;
     background-color:lightcyan;
+    font-family: 'Rozha One', serif;
+
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -37,14 +39,17 @@ textarea {
 }
 
 .jumbotronpicture {
-    background-image: url('Photos/background1.jpg');
-    height:250px;
+    background-image: url('Photos/closet.jpg');
+    height: 250px;
+    background-size:cover;
     font-family: 'Rozha One', serif;
-    font-size:30ps;
-   padding-top:60px;
-    padding-left:100px;
-    color:white;
-
+    font-size: 50px;
+    padding-top: 60px;
+    padding-left: 100px;
+    color: #02273A;
+    margin:auto, auto, auto, auto;
+    font-weight:600;
+ 
 }
 
 h1{
@@ -81,4 +86,49 @@ div.container.body-content div.row div.thumbpic4 {
 a.btn.btn-default{
     font-family: 'Rozha One', serif;
     background-color:lightcyan;
+}
+
+div.thumbnail.topStyle h3 {
+     font-family: 'Rozha One', serif;
+     color:white;
+}
+
+div.thumbnail.topStyle {
+    background-color:lightsteelblue;
+}
+
+div.thumbnail.accStyle {
+    background-color:lightsteelblue;
+
+}
+
+div.thumbnail.accStyle h3 {
+    font-family: 'Rozha One', serif;
+}
+
+div.thumbnail.bottomStyle {
+    background-color:lightsteelblue;
+
+}
+
+div.thumbnail.bottomStyle h3 {
+    font-family: 'Rozha One', serif;
+}
+
+div.container.body-content div.jumbotron a.btn-default{
+    padding-right:60px;
+   
+}
+
+.div.jumbotron.{
+    padding-bottom:40px;
+    margin-bottom:40px;
+}
+
+body .div.navbar .navbarmove{
+
+}
+div.navbar.navbar-inverse.navbar-fixed-top:hover{
+    background-color:#E0FFFF;
+    transition:ease-in-out;
 }

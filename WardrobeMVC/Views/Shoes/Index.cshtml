@@ -4,12 +4,32 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Pick out your shoes!</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Name) </h3>
+                    <div class="shoePicture">
+                        <img style="width:300px" src="@Html.DisplayFor(modelItem => item.Photo)">
+                    </div>
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ShoeID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ShoeID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ShoeID })
+                    </p>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Name)
@@ -54,4 +74,4 @@
     </tr>
 }
 
-</table>
+</table>*@

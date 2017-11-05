@@ -3,20 +3,20 @@
 }
 
 <div class="jumbotron, jumbotronpicture">
-    <h1>Hand Me Ups!</h1>
-    <p class="lead">Don't throw away clothes that don't fit! Donate or sell used clothes below!</p>
+    <h1>What Should I Wear?</h1>
+    <p class="lead">Input clothes you have in your closet and have a number of pre-set outfits so you don't ever have to skip breakfast!</p>
+    @*<a class="btn btn-default" @Html.ActionLink("Go to Oufits", "Index", "Outfits")</a>*@
     
-    @*<p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>*@
 </div>
 
 <div class="row">
     <div class="col-md-3">
         <div class="thumbnail, thumbpic1">
             <p>
-                <a class="btn btn-default" @Html.ActionLink("Tops", "Index", "Tops")</a>
+                <a class="btn btn-default" @Html.ActionLink("Tops", "Index", "Tops")></a>
             </p>
         </div>
-        @*<p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>*@
+       
     </div>
         <div class="col-md-3">
             <div class="thumbnail, thumbpic2">
@@ -39,5 +39,6 @@
             </p>
         </div>
     </div>
+
 
 </div>

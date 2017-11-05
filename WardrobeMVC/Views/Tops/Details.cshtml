@@ -6,53 +6,77 @@
 
 <h2>Details</h2>
 
-<div>
-    <h4>Top</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="caption">
+            <div class="thumbnail">
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+                <img src="@Html.DisplayFor(model => model.Photo)">
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Photo)
-        </dt>
+               
+                <h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span>@Html.DisplayFor(model => model.Name)<span class="glyphicon glyphicon-star" aria-hidden="true"></span></h3>
+               
+                <h4>@Html.DisplayNameFor(model => model.Color) : @Html.DisplayFor(model => model.Color)</h4>
+                <h5>@Html.DisplayNameFor(model => model.Occasion) : @Html.DisplayFor(model => model.Occasion)</h5>
+                <h5>@Html.DisplayFor(model => model.Type)</h5>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID })
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+              
 
-        <dd>
-            @Html.DisplayFor(model => model.Photo)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Type)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Type)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Color)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion)
-        </dd>
-
-    </dl>
+            </div>
+        </div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
+@*<div>
+        <h4>Top</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Name)
+            </dt>
+
+            <dd> @Html.DisplayFor(model => model.Name)
+
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Photo)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Photo)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Type)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Type)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Color)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Color)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Occasion)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Occasion)
+            </dd>
+
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.TopID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>*@

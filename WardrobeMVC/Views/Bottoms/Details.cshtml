@@ -6,7 +6,32 @@
 
 <h2>Details</h2>
 
-<div>
+
+<div class="row">
+    <div class="col-sm-6 col-md-4">
+        <div class="caption">
+            <div class="thumbnail">
+
+                <img src="@Html.DisplayFor(model => model.Photo)">
+
+
+                <h3><span class="glyphicon glyphicon-star" aria-hidden="true"></span>@Html.DisplayFor(model => model.Name)<span class="glyphicon glyphicon-star" aria-hidden="true"></span></h3>
+
+                <h4>@Html.DisplayNameFor(model => model.Color) : @Html.DisplayFor(model => model.Color)</h4>
+                <h5>@Html.DisplayNameFor(model => model.Occasion) : @Html.DisplayFor(model => model.Occasion)</h5>
+                <h5>@Html.DisplayFor(model => model.Type)</h5>
+                <p>
+                    @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID })
+                    @Html.ActionLink("Back to List", "Index")
+                </p>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<div>
     <h4>Bottom</h4>
     <hr />
     <dl class="dl-horizontal">
@@ -55,4 +80,4 @@
 <p>
     @Html.ActionLink("Edit", "Edit", new { id = Model.BottomID }) |
     @Html.ActionLink("Back to List", "Index")
-</p>
+</p>*@
