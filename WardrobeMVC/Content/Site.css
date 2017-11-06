@@ -120,15 +120,17 @@ div.container.body-content div.jumbotron a.btn-default{
    
 }
 
-.div.jumbotron{
+/*.div.jumbotron{
     padding-bottom:40px;
     margin-bottom:40px;
-}
+}*/
 
-body .div.navbar .navbarmove{
 
-}
 div.navbar.navbar-inverse.navbar-fixed-top:hover{
     background-color:gold;
     transition:ease-in-out;
+}
+
+div.jumbotron,.jumbotronpicture a.btn.btn-default{
+    margin-bottom:40px;
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.Entity;
 using System.Linq;
 using System.Web;
@@ -27,6 +28,7 @@ namespace WardrobeMVC.Models
 
         public System.Data.Entity.DbSet<WardrobeMVC.Models.Shoe> Shoes { get; set; }
 
+        
         public System.Data.Entity.DbSet<WardrobeMVC.Models.Outfit> Outfits { get; set; }
     }
 }

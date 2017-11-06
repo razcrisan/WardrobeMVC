@@ -9,7 +9,25 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+
+@foreach (var item in Model)
+{
+    <div class="row rowitems" style="color:white">
+        <div class="col-md-3">
+            <div class="outfit">
+                <div class="caption">
+                    <h3>@Html.DisplayFor(modelItem => item.Accessory.Name)</h3>
+                    <img class="shirt1" src="@Html.DisplayFor(modelItem => item.Accessory.Photo)" />
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+}
+
+
+@*<table class="table">
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Accessory.Name)
@@ -48,4 +66,4 @@
     </tr>
 }
 
-</table>
+</table>*@
