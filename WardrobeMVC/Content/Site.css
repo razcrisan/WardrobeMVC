@@ -46,7 +46,7 @@ textarea {
     font-size: 50px;
     padding-top: 60px;
     padding-left: 100px;
-    color: #02273A;
+    color: white;
     margin:auto, auto, auto, auto;
     font-weight:600;
  
@@ -120,7 +120,7 @@ div.container.body-content div.jumbotron a.btn-default{
    
 }
 
-.div.jumbotron.{
+.div.jumbotron{
     padding-bottom:40px;
     margin-bottom:40px;
 }
@@ -129,6 +129,6 @@ body .div.navbar .navbarmove{
 
 }
 div.navbar.navbar-inverse.navbar-fixed-top:hover{
-    background-color:#E0FFFF;
+    background-color:gold;
     transition:ease-in-out;
 }
